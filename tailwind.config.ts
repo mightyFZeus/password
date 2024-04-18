@@ -7,6 +7,7 @@ export default {
     extend: {
       fontFamily: {
         primary: ['Inter', ...defaultTheme.fontFamily.sans],
+        jarkata: ['var(--font-jarkata)'],
       },
       colors: {
         primary: {
@@ -24,6 +25,8 @@ export default {
           950: 'rgb(var(--tw-color-primary-950) / <alpha-value>)',
         },
         dark: '#222222',
+        primaryBlue: '#3C5FDB',
+        secondaryBlue: '#8e9ee3',
       },
       keyframes: {
         flicker: {
