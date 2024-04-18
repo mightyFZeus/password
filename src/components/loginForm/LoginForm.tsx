@@ -88,9 +88,11 @@ const LoginForm = () => {
               label='Enter Password'
               placeholder='Enter Password'
             />
-            <StrengthIndicator
-              strength={passwordStrengthIndicator(formik.values.password)}
-            />
+            {formik.values.password !== '' && (
+              <StrengthIndicator
+                strength={passwordStrengthIndicator(formik.values.password)}
+              />
+            )}
           </div>
           <Button
             disabled={areAllValuesFalse}

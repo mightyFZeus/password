@@ -5,12 +5,7 @@ import { ModalProps } from '@/components/genModal/types';
 
 import { ModalWrapper } from './styled';
 
-const SideModal: React.FC<ModalProps> = ({
-  handleCloseModal,
-  isOpen,
-  children,
-  className,
-}) => {
+const SideModal: React.FC<ModalProps> = ({ isOpen, children, className }) => {
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
@@ -21,7 +16,6 @@ const SideModal: React.FC<ModalProps> = ({
   return (
     <Modal
       isOpen={isOpen}
-      onRequestClose={handleCloseModal}
       shouldCloseOnEsc
       style={{
         overlay: {

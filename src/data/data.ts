@@ -6,7 +6,7 @@ export const settingsData = [
   },
   {
     text: 'At least 1 lowercase',
-    value: true,
+    value: false,
     id: 2,
   },
   {
